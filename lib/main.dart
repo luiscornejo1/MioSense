@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:miosense/Views/splash_screen.dart';
+
 
 void main() {
-  runApp(const MainApp());
+  runApp(MiosenseApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MiosenseApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
