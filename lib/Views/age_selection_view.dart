@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:miosense/Views/weight_selection_view.dart';
 
 class AgeSelectionView extends StatefulWidget {
+  final String gender; 
+  AgeSelectionView({required this.gender});
+  
   @override
   _AgeSelectionViewState createState() => _AgeSelectionViewState();
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'muscle_selection_view.dart';
 
 
 import 'package:image_picker/image_picker.dart';
@@ -89,6 +89,8 @@ class _ProfileCompletionViewState extends State<ProfileCompletionView> {
               onPressed: () {
                 // Acción al presionar "Start"
                 print('Perfil completado: ${fullNameController.text}, ${nicknameController.text}, ${emailController.text}, ${mobileNumberController.text}');
+                Navigator.push(context,
+                MaterialPageRoute(builder:(context)=> MuscleSelectionView()));
               },
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(

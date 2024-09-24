@@ -37,7 +37,7 @@ class _WeightSelectionViewState extends State<WeightSelectionView> {
           ),
           SizedBox(height: 10.0),
           Text(
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            '',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white70,

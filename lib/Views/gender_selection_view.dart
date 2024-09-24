@@ -43,7 +43,8 @@ class _GenderSelectionViewState extends State<GenderSelectionView> {
                     ? () {
                         // Acción para continuar con el género seleccionado
                         Navigator.push(context,
-                        MaterialPageRoute(builder:(context)=> AgeSelectionView()),
+                        MaterialPageRoute(builder:(context)=> AgeSelectionView(gender: selectedGender)
+                        ),
                         );
                       }
                     : null, // Botón deshabilitado si no se ha seleccionado un género
